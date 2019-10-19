@@ -28,4 +28,4 @@ class FavoriteSerializer(serializers.ModelSerializer):
 class RecommendationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ('user_id', 'post_id')
+        fields = ('id', 'user_id', 'date', 'text', 'img_url', 'like_cnt')
