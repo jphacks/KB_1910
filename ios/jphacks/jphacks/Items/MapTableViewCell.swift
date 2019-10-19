@@ -38,7 +38,8 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
         setMapArea(lat: 34.685219, long: 135.199402)
         
         // ピンを刺す
-        addPin()
+        addPin(lat: 34.685219, long: 135.199402, title: "JPHACKS 神戸会場")
+        addPin(lat: 34.690018, long: 135.186998, title: "元町駅")
     }
     
     /*
@@ -58,13 +59,13 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
     /*
      * 地図上にピンを刺す
      */
-    func addPin() {
+    func addPin(lat: Double, long: Double, title: String) {
         let annotation = MKPointAnnotation()
         // ピンの位置
-        let locationCoordinate = CLLocationCoordinate2D(latitude: 34.685219, longitude: 135.199402)
+        let locationCoordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
         annotation.coordinate = locationCoordinate
         // ラベル
-        annotation.title = "JPHACKS 神戸会場"
+        annotation.title = title
         // ピンを追加
         map.addAnnotation(annotation)
     }
@@ -98,7 +99,7 @@ extension MapTableViewCell: CLLocationManagerDelegate {
         
         // 現在地近辺を表示
         if (DEBUG == true) {
-            setMapArea(lat: 34.685219, long: 135.199402)
+            setMapArea(lat: 35.6815014, long: 139.7636097)
         } else {
             setMapArea(lat: lat, long: long)
         }
