@@ -251,6 +251,61 @@
             </objects>
             <point key="canvasLocation" x="3792.753623188406" y="148.66071428571428"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="U5Q-w8-67A">
+            <objects>
+                <viewController id="S8p-3h-lzq" customClass="DetailViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Efj-Bq-dJg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mjc-fx-NB7">
+                                <rect key="frame" x="20" y="233" width="374" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample Caption..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-SN-2HE">
+                                <rect key="frame" x="20" y="629" width="374" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0R-JJ-BEu">
+                                <rect key="frame" x="305" y="588" width="89" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" title="　LIKE" image="heart.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="favoriteButton:" destination="S8p-3h-lzq" eventType="touchUpInside" id="f8K-U7-ZsH"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7cE-6o-IYr">
+                                <rect key="frame" x="20" y="165" width="63" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHO-Y5-sVF">
+                                <rect key="frame" x="91" y="165" width="303" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="906-hf-zuS"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailCaptionLabel" destination="b4N-SN-2HE" id="JLB-dl-7V6"/>
+                        <outlet property="detailImageView" destination="Mjc-fx-NB7" id="XTh-7j-VdX"/>
+                        <outlet property="detailNameLable" destination="pHO-Y5-sVF" id="uEp-eW-o1K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfm-i4-j0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5028.985507246377" y="588.61607142857144"/>
+        </scene>
         <!--POST-->
         <scene sceneID="stJ-if-f48">
             <objects>
@@ -343,16 +398,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kg4-7e-khL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4689.8550724637689" y="148.66071428571428"/>
+            <point key="canvasLocation" x="5029" y="-165"/>
         </scene>
     </scenes>
     <resources>
         <image name="background_11pro.png" width="1242" height="2688"/>
         <image name="background_11pro_2.png" width="1242" height="2688"/>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="logo.png" width="422" height="353"/>
         <image name="pencil.tip" catalog="system" width="48" height="64"/>
         <image name="person" catalog="system" width="64" height="58"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="ログイン.png" width="527" height="142"/>
         <image name="投稿.png" width="527" height="142"/>
         <image name="登録.png" width="526" height="141"/>
