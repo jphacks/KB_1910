@@ -32,7 +32,9 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
         addPin()
     }
     
-    
+    /*
+     * 地図上にピンを刺す
+     */
     func addPin() {
         let annotation = MKPointAnnotation()
         // ピンの位置
