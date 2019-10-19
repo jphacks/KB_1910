@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pO-tt-GKT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -168,7 +168,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O2B-Y0-n49">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="G5B-4c-SyB" kind="relationship" relationship="viewControllers" id="Hox-8R-QTU"/>
@@ -180,7 +180,7 @@
             </objects>
             <point key="canvasLocation" x="2370" y="149"/>
         </scene>
-        <!--Item-->
+        <!--HOME-->
         <scene sceneID="pu8-rq-h8j">
             <objects>
                 <viewController storyboardIdentifier="homeScene" id="G5B-4c-SyB" customClass="HomeViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
@@ -216,7 +216,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ciy-xY-KYd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mBj-Od-7QB"/>
+                    <tabBarItem key="tabBarItem" title="HOME" image="house" catalog="system" id="mBj-Od-7QB"/>
                     <connections>
                         <outlet property="TableView" destination="PGF-aP-AYe" id="Xaf-em-ie3"/>
                     </connections>
@@ -225,7 +225,7 @@
             </objects>
             <point key="canvasLocation" x="3792.753623188406" y="-634.15178571428567"/>
         </scene>
-        <!--Item-->
+        <!--SEARCH-->
         <scene sceneID="HFb-1H-Xl8">
             <objects>
                 <viewController storyboardIdentifier="searchScene" id="c42-oh-RxF" customClass="SearchViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
@@ -244,13 +244,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3fK-JV-110"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="jCi-No-TUE"/>
+                    <tabBarItem key="tabBarItem" title="SEARCH" image="magnifyingglass" catalog="system" id="jCi-No-TUE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATB-yv-OlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3794" y="149"/>
         </scene>
-        <!--Item-->
+        <!--POST-->
         <scene sceneID="stJ-if-f48">
             <objects>
                 <viewController storyboardIdentifier="postScene" id="mC3-o6-m21" customClass="PostViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
@@ -291,7 +291,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="8q9-xK-LHg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tO1-8k-YBO"/>
+                    <tabBarItem key="tabBarItem" title="POST" image="pencil.tip" catalog="system" id="tO1-8k-YBO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V80-VA-l9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -326,7 +326,10 @@
     <resources>
         <image name="background_11pro.png" width="1242" height="2688"/>
         <image name="background_11pro_2.png" width="1242" height="2688"/>
+        <image name="house" catalog="system" width="64" height="54"/>
         <image name="logo.png" width="422" height="353"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="pencil.tip" catalog="system" width="48" height="64"/>
         <image name="ログイン.png" width="527" height="142"/>
         <image name="投稿.png" width="527" height="142"/>
         <image name="登録.png" width="526" height="141"/>
