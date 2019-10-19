@@ -8,15 +8,32 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
 
     @IBOutlet weak var map: MKMapView!
+    var locationManager : CLLocationManager!
+    // 現在地
+    var currentLongitude = 0.0
+    var currentLatitude = 0.0
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+        // locationManager設定
+        locationManager = CLLocationManager()
+        guard let locationManager = locationManager else { return }
+        //　locationManagerの権限をviewControllerに渡す
+        locationManager.delegate = self
+        // アプリ利用時に位置情報を取得する
+        locationManager.requestWhenInUseAuthorization()
+        let status = CLLocationManager.authorizationStatus()
+        if status == .authorizedWhenInUse {
+            locationManager.distanceFilter = 10
+            locationManager.startUpdatingLocation()
+        }
+        // map設定
         map.delegate = self
         
         // mapの中心
@@ -56,11 +73,21 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
             }
         }
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
+}
 
+extension MapTableViewCell: CLLocationManagerDelegate {
+    /*
+     * 現在地取得の際に呼ばれる関数
+     */
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.first
+        self.currentLatitude = location?.coordinate.latitude ?? 35.7020691
+        self.currentLongitude = location?.coordinate.longitude ?? 139.7753269
+    }
 }
