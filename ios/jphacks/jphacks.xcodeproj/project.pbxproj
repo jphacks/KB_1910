@@ -21,7 +21,9 @@
 		3FF32865235AACB50065FF66 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32864235AACB50065FF66 /* PostViewController.swift */; };
 		3FF32869235AB44B0065FF66 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32868235AB44B0065FF66 /* MapTableViewCell.swift */; };
 		3FF3286B235AB6FC0065FF66 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3286A235AB6FC0065FF66 /* CollectionTableViewCell.swift */; };
-		3FF32871235ABED70065FF66 /* Collection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF32870235ABED70065FF66 /* Collection.xib */; };
+		3FF32871235ABED70065FF66 /* CollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF32870235ABED70065FF66 /* CollectionView.xib */; };
+		3FF32873235AE2140065FF66 /* CollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF32872235AE2140065FF66 /* CollectionItem.xib */; };
+		3FF32875235AE4870065FF66 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32874235AE4870065FF66 /* ItemCollectionViewCell.swift */; };
 		616A7B0C04AFB3D98DFE8AA9 /* Pods_jphacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +44,9 @@
 		3FF32864235AACB50065FF66 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		3FF32868235AB44B0065FF66 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 		3FF3286A235AB6FC0065FF66 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
-		3FF32870235ABED70065FF66 /* Collection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Collection.xib; sourceTree = "<group>"; };
+		3FF32870235ABED70065FF66 /* CollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionView.xib; sourceTree = "<group>"; };
+		3FF32872235AE2140065FF66 /* CollectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionItem.xib; sourceTree = "<group>"; };
+		3FF32874235AE4870065FF66 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		4DE28282350B16AA9B49480F /* Pods-jphacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.release.xcconfig"; sourceTree = "<group>"; };
 		AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jphacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC74DF9064449F599FFC4A09 /* Pods-jphacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +88,7 @@
 				3FF3284B235AA9A90065FF66 /* Main.storyboard */,
 				3FF32859235AAC0E0065FF66 /* ViewControllers */,
 				3FF3286D235ABDC50065FF66 /* Xibs */,
-				3FF32867235AB4280065FF66 /* Items */,
+				3FF32867235AB4280065FF66 /* Cells */,
 				3FF32845235AA9A90065FF66 /* AppDelegate.swift */,
 				3FF32847235AA9A90065FF66 /* SceneDelegate.swift */,
 				3FF3284E235AA9AA0065FF66 /* Assets.xcassets */,
@@ -108,19 +112,21 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		3FF32867235AB4280065FF66 /* Items */ = {
+		3FF32867235AB4280065FF66 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				3FF32868235AB44B0065FF66 /* MapTableViewCell.swift */,
 				3FF3286A235AB6FC0065FF66 /* CollectionTableViewCell.swift */,
+				3FF32874235AE4870065FF66 /* ItemCollectionViewCell.swift */,
 			);
-			path = Items;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		3FF3286D235ABDC50065FF66 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				3FF32870235ABED70065FF66 /* Collection.xib */,
+				3FF32870235ABED70065FF66 /* CollectionView.xib */,
+				3FF32872235AE2140065FF66 /* CollectionItem.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -202,8 +208,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF32871235ABED70065FF66 /* Collection.xib in Resources */,
+				3FF32871235ABED70065FF66 /* CollectionView.xib in Resources */,
 				3FF32852235AA9AA0065FF66 /* LaunchScreen.storyboard in Resources */,
+				3FF32873235AE2140065FF66 /* CollectionItem.xib in Resources */,
 				3FF3284F235AA9AA0065FF66 /* Assets.xcassets in Resources */,
 				3FF3284D235AA9A90065FF66 /* Main.storyboard in Resources */,
 			);
@@ -268,6 +275,7 @@
 				3FF3286B235AB6FC0065FF66 /* CollectionTableViewCell.swift in Sources */,
 				3FF32869235AB44B0065FF66 /* MapTableViewCell.swift in Sources */,
 				3FF32848235AA9A90065FF66 /* SceneDelegate.swift in Sources */,
+				3FF32875235AE4870065FF66 /* ItemCollectionViewCell.swift in Sources */,
 				3FF3285D235AAC540065FF66 /* SiginUpViewController.swift in Sources */,
 				3FF3285F235AAC5C0065FF66 /* HomeViewController.swift in Sources */,
 			);

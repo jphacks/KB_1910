@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         // xibを登録
-        tableView.register(UINib(nibName: "Collection", bundle: nil), forCellReuseIdentifier: "collection")
+        tableView.register(UINib(nibName: "CollectionView", bundle: nil), forCellReuseIdentifier: "collection")
 
         // Do any additional setup after loading the view.
     }
