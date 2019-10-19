@@ -66,7 +66,7 @@ extension HomeViewController: UITableViewDelegate ,UITableViewDataSource {
         if indexPath.section == 0 {
             return 500
         } else {
-            return 1000
+            return 828
         }
     }
     

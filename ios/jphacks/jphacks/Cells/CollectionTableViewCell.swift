@@ -11,6 +11,7 @@ import UIKit
 class CollectionTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,6 +19,15 @@ class CollectionTableViewCell: UITableViewCell {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        // スクロールを禁止
+        collectionView.isScrollEnabled = false
+        
+        // 横方向に並べていく
+        flowLayout.scrollDirection = .vertical
+        // 空白をなくす
+        flowLayout.minimumLineSpacing = 0
+        flowLayout.minimumInteritemSpacing = 0
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         // xibを登録
         let nib = UINib(nibName: "CollectionItem", bundle: nil)
@@ -32,7 +42,7 @@ class CollectionTableViewCell: UITableViewCell {
 
 }
 
-extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     /*
      * cellの個数
      */
