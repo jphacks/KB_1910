@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Nuke
 
 class CollectionTableViewCell: UITableViewCell {
 
@@ -55,8 +56,9 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
      */
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionItem", for: indexPath) as! ItemCollectionViewCell
-        // 色を変更
-        cell.backgroundColor = UIColor.red
+        
+        // 画像を設定
+        Nuke.loadImage(with: URL(string: "https://medicalcoder.up.seesaa.net/image/Healthy20food.jpg")!, into: cell.ImageItem)
         return cell
     }
     
