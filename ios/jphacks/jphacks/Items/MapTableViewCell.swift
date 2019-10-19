@@ -19,10 +19,13 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
         
         map.delegate = self
         
-        // mapの中心を変更
+        // mapの中心
         let mapCenter = CLLocationCoordinate2D(latitude: 34.685219, longitude: 135.199402)
+        // mapの範囲
         let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+        // mapの表示領域
         let region = MKCoordinateRegion(center: mapCenter, span: mapSpan)
+        // 表示領域を変更
         map.setRegion(region, animated: false)
     }
 
