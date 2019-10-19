@@ -25,6 +25,18 @@
 		3FF32873235AE2140065FF66 /* CollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF32872235AE2140065FF66 /* CollectionItem.xib */; };
 		3FF32875235AE4870065FF66 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32874235AE4870065FF66 /* ItemCollectionViewCell.swift */; };
 		616A7B0C04AFB3D98DFE8AA9 /* Pods_jphacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */; };
+		D8EAC928235AFA9600518465 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC927235AFA9500518465 /* AppIcon.png */; };
+		D8EAC92B235AFAE700518465 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC92A235AFAE700518465 /* background.png */; };
+		D8EAC92D235AFAF300518465 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC92C235AFAF300518465 /* home.png */; };
+		D8EAC92F235AFB0000518465 /* login_background.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC92E235AFB0000518465 /* login_background.png */; };
+		D8EAC931235AFB0A00518465 /* post.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC930235AFB0A00518465 /* post.png */; };
+		D8EAC933235AFB1300518465 /* recommend.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC932235AFB1200518465 /* recommend.png */; };
+		D8EAC935235AFB1B00518465 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC934235AFB1B00518465 /* search.png */; };
+		D8EAC937235AFB2400518465 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC936235AFB2400518465 /* start.png */; };
+		D8EAC939235AFB2B00518465 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC938235AFB2B00518465 /* user.png */; };
+		D8EAC93B235AFB3200518465 /* ログイン.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC93A235AFB3200518465 /* ログイン.png */; };
+		D8EAC93D235AFB3B00518465 /* 登録.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC93C235AFB3B00518465 /* 登録.png */; };
+		D8EAC93F235AFC6A00518465 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC93E235AFC6A00518465 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +61,18 @@
 		3FF32874235AE4870065FF66 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		4DE28282350B16AA9B49480F /* Pods-jphacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.release.xcconfig"; sourceTree = "<group>"; };
 		AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jphacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EAC927235AFA9500518465 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		D8EAC92A235AFAE700518465 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		D8EAC92C235AFAF300518465 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		D8EAC92E235AFB0000518465 /* login_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background.png; sourceTree = "<group>"; };
+		D8EAC930235AFB0A00518465 /* post.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post.png; sourceTree = "<group>"; };
+		D8EAC932235AFB1200518465 /* recommend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommend.png; sourceTree = "<group>"; };
+		D8EAC934235AFB1B00518465 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		D8EAC936235AFB2400518465 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		D8EAC938235AFB2B00518465 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		D8EAC93A235AFB3200518465 /* ログイン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ログイン.png"; sourceTree = "<group>"; };
+		D8EAC93C235AFB3B00518465 /* 登録.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登録.png"; sourceTree = "<group>"; };
+		D8EAC93E235AFC6A00518465 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DC74DF9064449F599FFC4A09 /* Pods-jphacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +116,7 @@
 				3FF32845235AA9A90065FF66 /* AppDelegate.swift */,
 				3FF32847235AA9A90065FF66 /* SceneDelegate.swift */,
 				3FF3284E235AA9AA0065FF66 /* Assets.xcassets */,
+				D8EAC929235AFAC900518465 /* assets */,
 				3FF32850235AA9AA0065FF66 /* LaunchScreen.storyboard */,
 				3FF32853235AA9AA0065FF66 /* Info.plist */,
 			);
@@ -146,6 +171,25 @@
 				4DE28282350B16AA9B49480F /* Pods-jphacks.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8EAC929235AFAC900518465 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D8EAC936235AFB2400518465 /* start.png */,
+				D8EAC927235AFA9500518465 /* AppIcon.png */,
+				D8EAC93E235AFC6A00518465 /* logo.png */,
+				D8EAC92C235AFAF300518465 /* home.png */,
+				D8EAC93A235AFB3200518465 /* ログイン.png */,
+				D8EAC92E235AFB0000518465 /* login_background.png */,
+				D8EAC93C235AFB3B00518465 /* 登録.png */,
+				D8EAC938235AFB2B00518465 /* user.png */,
+				D8EAC934235AFB1B00518465 /* search.png */,
+				D8EAC92A235AFAE700518465 /* background.png */,
+				D8EAC932235AFB1200518465 /* recommend.png */,
+				D8EAC930235AFB0A00518465 /* post.png */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,10 +253,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF32871235ABED70065FF66 /* CollectionView.xib in Resources */,
+				D8EAC93B235AFB3200518465 /* ログイン.png in Resources */,
+				D8EAC931235AFB0A00518465 /* post.png in Resources */,
+				D8EAC933235AFB1300518465 /* recommend.png in Resources */,
 				3FF32852235AA9AA0065FF66 /* LaunchScreen.storyboard in Resources */,
+				D8EAC93F235AFC6A00518465 /* logo.png in Resources */,
+				D8EAC939235AFB2B00518465 /* user.png in Resources */,
+				D8EAC93D235AFB3B00518465 /* 登録.png in Resources */,
+				D8EAC92B235AFAE700518465 /* background.png in Resources */,
+				D8EAC928235AFA9600518465 /* AppIcon.png in Resources */,
+				D8EAC92D235AFAF300518465 /* home.png in Resources */,
+				D8EAC935235AFB1B00518465 /* search.png in Resources */,
+				D8EAC92F235AFB0000518465 /* login_background.png in Resources */,
 				3FF32873235AE2140065FF66 /* CollectionItem.xib in Resources */,
 				3FF3284F235AA9AA0065FF66 /* Assets.xcassets in Resources */,
 				3FF3284D235AA9A90065FF66 /* Main.storyboard in Resources */,
+				D8EAC937235AFB2400518465 /* start.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,8 +479,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NFWEW5U6D4;
+				DEVELOPMENT_TEAM = 6SL49V4SU8;
 				INFOPLIST_FILE = jphacks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,8 +499,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NFWEW5U6D4;
+				DEVELOPMENT_TEAM = 6SL49V4SU8;
 				INFOPLIST_FILE = jphacks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
