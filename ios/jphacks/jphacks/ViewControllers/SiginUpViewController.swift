@@ -33,6 +33,11 @@ class SiginUpViewController: UIViewController {
      * ユーザー登録処理
      */
     @IBAction func registerButton(_ sender: Any) {
+        // 遷移
+        let storyboard: UIStoryboard = self.storyboard!
+        let second = storyboard.instantiateViewController(withIdentifier: "barRoot")
+        second.modalPresentationStyle =  .fullScreen
+        self.present(second, animated: false, completion: nil)
     }
     
     /*
