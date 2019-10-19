@@ -27,6 +27,21 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
         let region = MKCoordinateRegion(center: mapCenter, span: mapSpan)
         // 表示領域を変更
         map.setRegion(region, animated: false)
+        
+        // ピンを刺す
+        addPin()
+    }
+    
+    
+    func addPin() {
+        let annotation = MKPointAnnotation()
+        // ピンの位置
+        let locationCoordinate = CLLocationCoordinate2D(latitude: 34.685219, longitude: 135.199402)
+        annotation.coordinate = locationCoordinate
+        // ラベル
+        annotation.title = "JPHACKS 神戸会場"
+        // ピンを追加
+        map.addAnnotation(annotation)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
