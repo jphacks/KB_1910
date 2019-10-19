@@ -37,6 +37,9 @@
 		D8EAC93B235AFB3200518465 /* ログイン.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC93A235AFB3200518465 /* ログイン.png */; };
 		D8EAC93D235AFB3B00518465 /* 登録.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC93C235AFB3B00518465 /* 登録.png */; };
 		D8EAC93F235AFC6A00518465 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC93E235AFC6A00518465 /* logo.png */; };
+		D8EAC941235B041C00518465 /* 投稿.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC940235B041C00518465 /* 投稿.png */; };
+		D8EAC943235B0ADD00518465 /* background_11pro.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC942235B0ADC00518465 /* background_11pro.png */; };
+		D8EAC945235B0D8A00518465 /* background_11pro_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC944235B0D8A00518465 /* background_11pro_2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		D8EAC93A235AFB3200518465 /* ログイン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ログイン.png"; sourceTree = "<group>"; };
 		D8EAC93C235AFB3B00518465 /* 登録.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登録.png"; sourceTree = "<group>"; };
 		D8EAC93E235AFC6A00518465 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		D8EAC940235B041C00518465 /* 投稿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "投稿.png"; sourceTree = "<group>"; };
+		D8EAC942235B0ADC00518465 /* background_11pro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_11pro.png; sourceTree = "<group>"; };
+		D8EAC944235B0D8A00518465 /* background_11pro_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_11pro_2.png; sourceTree = "<group>"; };
 		DC74DF9064449F599FFC4A09 /* Pods-jphacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +185,9 @@
 				D8EAC936235AFB2400518465 /* start.png */,
 				D8EAC927235AFA9500518465 /* AppIcon.png */,
 				D8EAC93E235AFC6A00518465 /* logo.png */,
+				D8EAC942235B0ADC00518465 /* background_11pro.png */,
+				D8EAC944235B0D8A00518465 /* background_11pro_2.png */,
+				D8EAC940235B041C00518465 /* 投稿.png */,
 				D8EAC92C235AFAF300518465 /* home.png */,
 				D8EAC93A235AFB3200518465 /* ログイン.png */,
 				D8EAC92E235AFB0000518465 /* login_background.png */,
@@ -253,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF32871235ABED70065FF66 /* CollectionView.xib in Resources */,
+				D8EAC941235B041C00518465 /* 投稿.png in Resources */,
 				D8EAC93B235AFB3200518465 /* ログイン.png in Resources */,
 				D8EAC931235AFB0A00518465 /* post.png in Resources */,
 				D8EAC933235AFB1300518465 /* recommend.png in Resources */,
@@ -260,8 +270,10 @@
 				D8EAC93F235AFC6A00518465 /* logo.png in Resources */,
 				D8EAC939235AFB2B00518465 /* user.png in Resources */,
 				D8EAC93D235AFB3B00518465 /* 登録.png in Resources */,
+				D8EAC943235B0ADD00518465 /* background_11pro.png in Resources */,
 				D8EAC92B235AFAE700518465 /* background.png in Resources */,
 				D8EAC928235AFA9600518465 /* AppIcon.png in Resources */,
+				D8EAC945235B0D8A00518465 /* background_11pro_2.png in Resources */,
 				D8EAC92D235AFAF300518465 /* home.png in Resources */,
 				D8EAC935235AFB1B00518465 /* search.png in Resources */,
 				D8EAC92F235AFB0000518465 /* login_background.png in Resources */,
