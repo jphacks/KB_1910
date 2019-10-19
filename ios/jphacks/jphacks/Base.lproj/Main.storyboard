@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pO-tt-GKT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="initialScene" id="BYZ-38-t0r" customClass="ViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
         <!--Sigin Up View Controller-->
         <scene sceneID="hKf-y3-5ny">
             <objects>
-                <viewController id="fXj-Ii-rvz" customClass="SiginUpViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signupScene" id="fXj-Ii-rvz" customClass="SiginUpViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w3w-Cq-TDA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,12 +58,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mh2-lO-Yva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262.3188405797102" y="550.44642857142856"/>
+            <point key="canvasLocation" x="1296" y="539"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="0Lv-5T-OLD">
             <objects>
-                <viewController id="Nhi-E7-NC9" customClass="LoginViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signinScene" id="Nhi-E7-NC9" customClass="LoginViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zjh-2F-uMv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +111,7 @@
         <!--Item-->
         <scene sceneID="pu8-rq-h8j">
             <objects>
-                <viewController id="G5B-4c-SyB" customClass="HomeViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeScene" id="G5B-4c-SyB" customClass="HomeViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u0c-z4-QpF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +156,7 @@
         <!--Item-->
         <scene sceneID="HFb-1H-Xl8">
             <objects>
-                <viewController id="c42-oh-RxF" customClass="SearchViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchScene" id="c42-oh-RxF" customClass="SearchViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hxj-ex-oVt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +181,7 @@
         <!--Item-->
         <scene sceneID="stJ-if-f48">
             <objects>
-                <viewController id="mC3-o6-m21" customClass="PostViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="postScene" id="mC3-o6-m21" customClass="PostViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wXM-ap-y76">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,7 +228,7 @@
         <!--User View Controller-->
         <scene sceneID="Cat-ID-HMJ">
             <objects>
-                <viewController id="tpL-nL-vRU" customClass="UserViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userScene" id="tpL-nL-vRU" customClass="UserViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0hW-LB-HKf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

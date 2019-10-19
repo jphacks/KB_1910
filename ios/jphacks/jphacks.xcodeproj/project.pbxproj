@@ -24,6 +24,7 @@
 		3FF32871235ABED70065FF66 /* CollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF32870235ABED70065FF66 /* CollectionView.xib */; };
 		3FF32873235AE2140065FF66 /* CollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF32872235AE2140065FF66 /* CollectionItem.xib */; };
 		3FF32875235AE4870065FF66 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32874235AE4870065FF66 /* ItemCollectionViewCell.swift */; };
+		3FF32878235B1E3C0065FF66 /* UserAuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32877235B1E3C0065FF66 /* UserAuthInfo.swift */; };
 		616A7B0C04AFB3D98DFE8AA9 /* Pods_jphacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */; };
 		D8EAC928235AFA9600518465 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC927235AFA9500518465 /* AppIcon.png */; };
 		D8EAC92B235AFAE700518465 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EAC92A235AFAE700518465 /* background.png */; };
@@ -62,6 +63,7 @@
 		3FF32870235ABED70065FF66 /* CollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionView.xib; sourceTree = "<group>"; };
 		3FF32872235AE2140065FF66 /* CollectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionItem.xib; sourceTree = "<group>"; };
 		3FF32874235AE4870065FF66 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		3FF32877235B1E3C0065FF66 /* UserAuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthInfo.swift; sourceTree = "<group>"; };
 		4DE28282350B16AA9B49480F /* Pods-jphacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.release.xcconfig"; sourceTree = "<group>"; };
 		AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jphacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EAC927235AFA9500518465 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		3FF32844235AA9A90065FF66 /* jphacks */ = {
 			isa = PBXGroup;
 			children = (
+				3FF32876235B1E1C0065FF66 /* Models */,
 				3FF3284B235AA9A90065FF66 /* Main.storyboard */,
 				3FF32859235AAC0E0065FF66 /* ViewControllers */,
 				3FF3286D235ABDC50065FF66 /* Xibs */,
@@ -160,6 +163,14 @@
 				3FF32872235AE2140065FF66 /* CollectionItem.xib */,
 			);
 			path = Xibs;
+			sourceTree = "<group>";
+		};
+		3FF32876235B1E1C0065FF66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FF32877235B1E3C0065FF66 /* UserAuthInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BF7546B3119ADBABA241A3FF /* Frameworks */ = {
@@ -335,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF32865235AACB50065FF66 /* PostViewController.swift in Sources */,
+				3FF32878235B1E3C0065FF66 /* UserAuthInfo.swift in Sources */,
 				3FF3285B235AAC470065FF66 /* LoginViewController.swift in Sources */,
 				3FF32863235AAC8A0065FF66 /* UserViewController.swift in Sources */,
 				3FF32861235AAC820065FF66 /* SearchViewController.swift in Sources */,
