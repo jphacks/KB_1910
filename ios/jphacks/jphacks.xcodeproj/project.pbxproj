@@ -13,6 +13,12 @@
 		3FF3284D235AA9A90065FF66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF3284B235AA9A90065FF66 /* Main.storyboard */; };
 		3FF3284F235AA9AA0065FF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF3284E235AA9AA0065FF66 /* Assets.xcassets */; };
 		3FF32852235AA9AA0065FF66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF32850235AA9AA0065FF66 /* LaunchScreen.storyboard */; };
+		3FF3285B235AAC470065FF66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3285A235AAC470065FF66 /* LoginViewController.swift */; };
+		3FF3285D235AAC540065FF66 /* SiginUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3285C235AAC540065FF66 /* SiginUpViewController.swift */; };
+		3FF3285F235AAC5C0065FF66 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3285E235AAC5C0065FF66 /* HomeViewController.swift */; };
+		3FF32861235AAC820065FF66 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32860235AAC820065FF66 /* SearchViewController.swift */; };
+		3FF32863235AAC8A0065FF66 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32862235AAC8A0065FF66 /* UserViewController.swift */; };
+		3FF32865235AACB50065FF66 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32864235AACB50065FF66 /* PostViewController.swift */; };
 		616A7B0C04AFB3D98DFE8AA9 /* Pods_jphacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +31,12 @@
 		3FF3284E235AA9AA0065FF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FF32851235AA9AA0065FF66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FF32853235AA9AA0065FF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF3285A235AAC470065FF66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FF3285C235AAC540065FF66 /* SiginUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiginUpViewController.swift; sourceTree = "<group>"; };
+		3FF3285E235AAC5C0065FF66 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3FF32860235AAC820065FF66 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3FF32862235AAC8A0065FF66 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		3FF32864235AACB50065FF66 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		4DE28282350B16AA9B49480F /* Pods-jphacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.release.xcconfig"; sourceTree = "<group>"; };
 		AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jphacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC74DF9064449F599FFC4A09 /* Pods-jphacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,13 +77,27 @@
 			children = (
 				3FF32845235AA9A90065FF66 /* AppDelegate.swift */,
 				3FF32847235AA9A90065FF66 /* SceneDelegate.swift */,
-				3FF32849235AA9A90065FF66 /* ViewController.swift */,
+				3FF32859235AAC0E0065FF66 /* ViewControllers */,
 				3FF3284B235AA9A90065FF66 /* Main.storyboard */,
 				3FF3284E235AA9AA0065FF66 /* Assets.xcassets */,
 				3FF32850235AA9AA0065FF66 /* LaunchScreen.storyboard */,
 				3FF32853235AA9AA0065FF66 /* Info.plist */,
 			);
 			path = jphacks;
+			sourceTree = "<group>";
+		};
+		3FF32859235AAC0E0065FF66 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FF32849235AA9A90065FF66 /* ViewController.swift */,
+				3FF3285A235AAC470065FF66 /* LoginViewController.swift */,
+				3FF3285C235AAC540065FF66 /* SiginUpViewController.swift */,
+				3FF3285E235AAC5C0065FF66 /* HomeViewController.swift */,
+				3FF32860235AAC820065FF66 /* SearchViewController.swift */,
+				3FF32862235AAC8A0065FF66 /* UserViewController.swift */,
+				3FF32864235AACB50065FF66 /* PostViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		BF7546B3119ADBABA241A3FF /* Frameworks */ = {
@@ -207,9 +233,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF32865235AACB50065FF66 /* PostViewController.swift in Sources */,
+				3FF3285B235AAC470065FF66 /* LoginViewController.swift in Sources */,
+				3FF32863235AAC8A0065FF66 /* UserViewController.swift in Sources */,
+				3FF32861235AAC820065FF66 /* SearchViewController.swift in Sources */,
 				3FF3284A235AA9A90065FF66 /* ViewController.swift in Sources */,
 				3FF32846235AA9A90065FF66 /* AppDelegate.swift in Sources */,
 				3FF32848235AA9A90065FF66 /* SceneDelegate.swift in Sources */,
+				3FF3285D235AAC540065FF66 /* SiginUpViewController.swift in Sources */,
+				3FF3285F235AAC5C0065FF66 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
