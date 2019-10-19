@@ -62,5 +62,12 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
         return cell
     }
     
+    /*
+     * 押下時の処理
+     */
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+    
     
 }
