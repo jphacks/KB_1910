@@ -14,9 +14,7 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
 
     @IBOutlet weak var map: MKMapView!
     var locationManager : CLLocationManager!
-    // 現在地
-    var currentLongitude = 0.0
-    var currentLatitude = 0.0
+    let DEBUG = true
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -95,7 +93,14 @@ extension MapTableViewCell: CLLocationManagerDelegate {
      */
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.first
-        self.currentLatitude = location?.coordinate.latitude ?? 35.7020691
-        self.currentLongitude = location?.coordinate.longitude ?? 139.7753269
+        let lat = location?.coordinate.latitude ?? 35.7020691
+        let long = location?.coordinate.longitude ?? 139.7753269
+        
+        // 現在地近辺を表示
+        if (DEBUG == true) {
+            setMapArea(lat: 34.685219, long: 135.199402)
+        } else {
+            setMapArea(lat: lat, long: long)
+        }
     }
 }
