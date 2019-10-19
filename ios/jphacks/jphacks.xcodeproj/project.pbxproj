@@ -13,6 +13,7 @@
 		3FF3284D235AA9A90065FF66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF3284B235AA9A90065FF66 /* Main.storyboard */; };
 		3FF3284F235AA9AA0065FF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF3284E235AA9AA0065FF66 /* Assets.xcassets */; };
 		3FF32852235AA9AA0065FF66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF32850235AA9AA0065FF66 /* LaunchScreen.storyboard */; };
+		616A7B0C04AFB3D98DFE8AA9 /* Pods_jphacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		3FF3284E235AA9AA0065FF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FF32851235AA9AA0065FF66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FF32853235AA9AA0065FF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE28282350B16AA9B49480F /* Pods-jphacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.release.xcconfig"; sourceTree = "<group>"; };
+		AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jphacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC74DF9064449F599FFC4A09 /* Pods-jphacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jphacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jphacks/Pods-jphacks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616A7B0C04AFB3D98DFE8AA9 /* Pods_jphacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				3FF32844235AA9A90065FF66 /* jphacks */,
 				3FF32843235AA9A90065FF66 /* Products */,
+				D3E201C2D45EE03E16A838C4 /* Pods */,
+				BF7546B3119ADBABA241A3FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = jphacks;
 			sourceTree = "<group>";
 		};
+		BF7546B3119ADBABA241A3FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1E272BF07A021C6E66AF11 /* Pods_jphacks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3E201C2D45EE03E16A838C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC74DF9064449F599FFC4A09 /* Pods-jphacks.debug.xcconfig */,
+				4DE28282350B16AA9B49480F /* Pods-jphacks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FF32856235AA9AA0065FF66 /* Build configuration list for PBXNativeTarget "jphacks" */;
 			buildPhases = (
+				3F3E6F1430DDFBEFED96F3D2 /* [CP] Check Pods Manifest.lock */,
 				3FF3283E235AA9A90065FF66 /* Sources */,
 				3FF3283F235AA9A90065FF66 /* Frameworks */,
 				3FF32840235AA9A90065FF66 /* Resources */,
+				DAD5B4CC72C3529CA28D7849 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F3E6F1430DDFBEFED96F3D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jphacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD5B4CC72C3529CA28D7849 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-jphacks/Pods-jphacks-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jphacks/Pods-jphacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FF3283E235AA9A90065FF66 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3FF32857235AA9AA0065FF66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC74DF9064449F599FFC4A09 /* Pods-jphacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		3FF32858235AA9AA0065FF66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE28282350B16AA9B49480F /* Pods-jphacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
