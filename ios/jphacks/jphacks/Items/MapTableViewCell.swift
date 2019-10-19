@@ -45,6 +45,17 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
         // ピンを追加
         map.addAnnotation(annotation)
     }
+    
+    /*
+     * ピン押下時の処理
+     */
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotation = view.annotation {
+            if let title = annotation.title! {
+                print("Tapped \(title) pin")
+            }
+        }
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
