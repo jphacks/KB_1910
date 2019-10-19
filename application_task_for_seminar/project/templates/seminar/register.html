@@ -1,0 +1,61 @@
+{% extends "seminar/form_view_template.html" %}
+
+{% block body %}
+<div class='container'>
+  <div class='center-block'>
+    <form class="form-signin col-10 offset-1 row">
+      <div class='col-12'>
+        <!-- 高さ調整 -->
+        <div style='height:150px;'></div>
+
+        <!--タイトル-->
+        <h1 class="h3 mb-3 font-weight-normal">PHOTOS 2</h1>
+
+        <!--フォームアイテム-->
+        <input type="text" id="account_field" class="form-control" placeholder="アカウント名" required autofocus>
+        <input type="password" id="password_field" class="form-control" placeholder="パスワード" required autocomplete>
+
+        <!--ボタン-->
+        <button id="register_button" class="btn btn-lg btn-primary btn-block" type="button">登録</button>
+      </div>
+
+      <!--ログインページに移動-->
+      <a href="login" class='col-12 text-muted'>アカウントを持っている</a>
+    </form>
+  </div>
+</div>
+
+<!--オフライン用画面-->
+<div id='offline-bg'>
+  <div id='offline'>
+      STATUS: OFFLINE
+  </div>
+</div>
+{% endblock %}
+
+<!-- Optional JavaScript -->
+{% block optional_js %}
+<script>
+  $('#register_button').click(
+    function() {
+      var url = '/api/v1/register/';
+      var account_name = $('#account_field').val();
+      var password = $('#password_field').val();
+      $.ajax({
+        url: url,
+        type:'POST',
+        dataType: 'json',
+        data: '{"account_name": "' + account_name + '", "password": "' + "password" + '"}',
+        timeout: 3000,
+      }).done(function(response) {
+        // localStorageに保存
+        localStorage.setItem('token', response.token);
+
+        // 画面遷移
+        window.location.href = '/home';
+      }).fail(function(XMLHttpRequest, textStatus, errorThrown) {
+        alert(XMLHttpRequest.responseText);
+      })
+    })
+</script>
+{% endblock %}

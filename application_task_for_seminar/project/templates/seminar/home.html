@@ -1,0 +1,133 @@
+{% load pwa %}
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PHOTOS 2</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!--material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/seminar/css/home_style.css" rel="stylesheet">
+
+    <!--offline style-->
+    <link rel="stylesheet" href="/static/seminar/css/offline_style.css">
+
+	<!-- manifest -->
+	<link rel="manifest" href="/manifest.json">
+
+	<!-- ios用のアイコン設定 -->
+	<link rel="apple-touch-icon" href="/static/seminar/img/icon.png"/>
+	<!-- favicon設定 -->
+	<link rel="shortcut icon" href="/static/seminar/img/icon.png">
+	<!-- ステータスバーの色 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	{% progressive_web_app_meta %}
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">PHOTOS</a>
+        <button id='logout' class="btn btn-outline-secondary navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="nav-link" href="#">Logout</div>
+        </button>
+      </div>
+    </nav>
+
+    <!--header title-->
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase" style="color:#f05f40;">
+              <strong>PHOTOS</strong>
+            </h1>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--contents-->
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery" id='contents'>
+        </div>
+      </div>
+    </section>
+
+    <!--floating button-->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="btn-group">
+            <div class="btn btn-success btn-fab center-block floating-btn" onclick="location.href = 'style_transfer';">
+                <i class="material-icons text-center" style='position: fixed; right: 25px; font-size: 50px;'>add</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--オフライン用画面-->
+    <div id='offline-bg'>
+        <div id='offline'>
+            STATUS: OFFLINE
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://blackrockdigital.github.io/startbootstrap-creative/vendor/jquery/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://blackrockdigital.github.io/startbootstrap-creative/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/static/seminar/js/scrollreveal.min.js"></script>
+    <script src="https://blackrockdigital.github.io/startbootstrap-creative/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!--画像をクリックした時の挙動-->
+    <script src="https://blackrockdigital.github.io/startbootstrap-creative/js/creative.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <script src="/static/seminar/js/home_style.js"></script>
+
+    <!--offline style-->
+    <script src="/static/seminar/js/offline_style.js"></script>
+
+    <!--PWA-->
+	<script>
+	// ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
+	// jsのnavigatorオブジェクトから"serviceWorker"が存在するか確認する
+	if ('serviceWorker' in navigator) {
+		// ページからService Workerを登録する
+		navigator.serviceWorker.register('/static/seminar/js/sw.js').then(function(registration) {
+			// 登録成功
+			console.log('サービスワーカーの登録成功');
+		}).catch(function(err) {
+			// 登録失敗
+			console.log('サービスワーカーの登録失敗: ', err);
+		});
+	}
+	</script>
+  </body>
+
+</html>
