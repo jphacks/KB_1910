@@ -36,17 +36,25 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate {
         // map設定
         map.delegate = self
         
+        // 表示領域を設定
+        setMapArea(lat: 34.685219, long: 135.199402)
+        
+        // ピンを刺す
+        addPin()
+    }
+    
+    /*
+     * 地図の表示領域を変更
+     */
+    func setMapArea(lat: Double, long: Double) {
         // mapの中心
-        let mapCenter = CLLocationCoordinate2D(latitude: 34.685219, longitude: 135.199402)
+        let mapCenter = CLLocationCoordinate2D(latitude: lat, longitude: long)
         // mapの範囲
         let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
         // mapの表示領域
         let region = MKCoordinateRegion(center: mapCenter, span: mapSpan)
         // 表示領域を変更
         map.setRegion(region, animated: false)
-        
-        // ピンを刺す
-        addPin()
     }
     
     /*
