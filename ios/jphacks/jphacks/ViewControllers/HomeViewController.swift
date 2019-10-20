@@ -90,7 +90,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
      */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.row == 0 {
-            return CGSize(width: 400.0, height: 500.0)
+            return CGSize(width: 414.0, height: 500.0)
         } else {
             return CGSize(width: 207.0, height: 200.0)
         }
