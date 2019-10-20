@@ -71,8 +71,13 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mapCollectionItem", for: indexPath) as! MapCollectionViewCell
-
-            cell.addPin(lat: items[indexPath.row].map_lat, long: items[indexPath.row].map_lon, title: "")
+            print("DEBUG: called")
+            
+            // ピンを刺す
+            for item in items {
+                cell.addPin(lat: item.map_lat, long: item.map_lon, title: item.text)
+            }
+            
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionItem", for: indexPath) as! ItemCollectionViewCell
