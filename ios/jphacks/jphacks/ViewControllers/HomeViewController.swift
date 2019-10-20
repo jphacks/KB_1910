@@ -103,16 +103,20 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // ②Segueの識別子確認
-        if segue.identifier == "toShopInfomation" {
+        if segue.identifier == "showDetailSegue" {
             
             // ③遷移先ViewCntrollerの取得
             let nextView = segue.destination as! DetailViewController
         
-//            // ④値の設定
+            // ④値の設定
 //            nextView.Name = items[selectedItemIndex].name
 //            nextView.imagePath = items[selectedItemIndex].main_image_path
-//            nextView.url = items[selectedItemIndex].webpage
 //            nextView.descrip = items[selectedItemIndex].discription
+            
+            nextView.Name = "defau user"
+            nextView.imagePath = "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            nextView.descrip = "sadadvawineoiawoev"
+            
         }
     }
     
