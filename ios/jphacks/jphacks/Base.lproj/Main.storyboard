@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -166,7 +166,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O2B-Y0-n49">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="G5B-4c-SyB" kind="relationship" relationship="viewControllers" id="Hox-8R-QTU"/>
@@ -215,6 +215,7 @@
                     <connections>
                         <outlet property="collectionView" destination="WpP-1t-n7r" id="bHd-ME-tHh"/>
                         <outlet property="flowLayout" destination="wcT-P0-8iB" id="d1j-rJ-qDh"/>
+                        <segue destination="S8p-3h-lzq" kind="show" identifier="showDetailSegue" id="Pdp-Gt-X0l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzf-ls-iYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -250,9 +251,9 @@
         <!--Detail View Controller-->
         <scene sceneID="U5Q-w8-67A">
             <objects>
-                <viewController id="S8p-3h-lzq" customClass="DetailViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="defaultView" id="S8p-3h-lzq" customClass="DetailViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Efj-Bq-dJg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mjc-fx-NB7">
@@ -292,6 +293,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="906-hf-zuS"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ni3-qQ-nKz"/>
                     <connections>
                         <outlet property="detailCaptionLabel" destination="b4N-SN-2HE" id="JLB-dl-7V6"/>
                         <outlet property="detailImageView" destination="Mjc-fx-NB7" id="XTh-7j-VdX"/>
@@ -351,7 +353,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="画像を追加">
-                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="imageButton:" destination="mC3-o6-m21" eventType="touchUpInside" id="fqf-JL-VWU"/>
@@ -400,13 +402,13 @@
     <resources>
         <image name="background_11pro.png" width="1242" height="2688"/>
         <image name="background_11pro_2.png" width="1242" height="2688"/>
-        <image name="heart.fill" catalog="system" width="64" height="58"/>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="login_background.png" width="750" height="1334"/>
         <image name="logo.png" width="422" height="347"/>
         <image name="pencil.tip" catalog="system" width="48" height="64"/>
-        <image name="person" catalog="system" width="64" height="60"/>
-        <image name="person.circle" catalog="system" width="64" height="62"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="ログイン.png" width="527" height="142"/>
         <image name="投稿.png" width="527" height="142"/>
         <image name="登録.png" width="526" height="141"/>

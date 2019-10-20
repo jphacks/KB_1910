@@ -83,6 +83,10 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
      */
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
+        
+        if indexPath.row != 0 {
+            self.performSegue(withIdentifier: "showDetailSegue", sender: nil)
+        }
     }
     
     /*
@@ -96,5 +100,20 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // ②Segueの識別子確認
+        if segue.identifier == "toShopInfomation" {
+            
+            // ③遷移先ViewCntrollerの取得
+            let nextView = segue.destination as! DetailViewController
+        
+//            // ④値の設定
+//            nextView.Name = items[selectedItemIndex].name
+//            nextView.imagePath = items[selectedItemIndex].main_image_path
+//            nextView.url = items[selectedItemIndex].webpage
+//            nextView.descrip = items[selectedItemIndex].discription
+        }
+    }
     
 }
