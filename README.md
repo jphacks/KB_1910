@@ -1,7 +1,8 @@
 # サンプル（プロダクト名）
 
 [![Product Name](image.png)](https://www.youtube.com/watch?v=G5rULR53uMk)
-![キャッチコピー](https://user-images.githubusercontent.com/17947030/67153458-878c4580-f324-11e9-9b8c-0780abf447db.png)
+![キャッチコピー](https://user-images.githubusercontent.com/17947030/67153494-77289a80-f325-11e9-8715-8d4794cda514.png)
+
 
 ## 製品概要
 ### X Tech（X → 今回皆さんが選定した好きな言葉に書き換えてください）
