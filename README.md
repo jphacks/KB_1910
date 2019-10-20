@@ -1,7 +1,8 @@
 # サンプル（プロダクト名）
 
 [![Product Name](image.png)](https://www.youtube.com/watch?v=G5rULR53uMk)
-![キャッチコピー](https://user-images.githubusercontent.com/17947030/67153494-77289a80-f325-11e9-8715-8d4794cda514.png)
+![キャッチコピー](https://user-images.githubusercontent.com/17947030/67153568-d6d37580-f326-11e9-86c8-6ab33d144a11.png)
+
 
 
 ## 製品概要
