@@ -11,6 +11,7 @@
 		3F9956CA235B798100BAE6DD /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9956C9235B798100BAE6DD /* save.png */; };
 		3FAC16D8235BF27700787800 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC16D6235BF27700787800 /* MapCollectionViewCell.swift */; };
 		3FAC16D9235BF27700787800 /* MapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC16D7235BF27700787800 /* MapCollectionViewCell.xib */; };
+		3FAC16DB235C016D00787800 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC16DA235C016D00787800 /* Item.swift */; };
 		3FF32846235AA9A90065FF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32845235AA9A90065FF66 /* AppDelegate.swift */; };
 		3FF32848235AA9A90065FF66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32847235AA9A90065FF66 /* SceneDelegate.swift */; };
 		3FF3284A235AA9A90065FF66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32849235AA9A90065FF66 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		3F9956C9235B798100BAE6DD /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		3FAC16D6235BF27700787800 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
 		3FAC16D7235BF27700787800 /* MapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapCollectionViewCell.xib; sourceTree = "<group>"; };
+		3FAC16DA235C016D00787800 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3FF32842235AA9A90065FF66 /* jphacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jphacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF32845235AA9A90065FF66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF32847235AA9A90065FF66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				3FF32877235B1E3C0065FF66 /* UserAuthInfo.swift */,
+				3FAC16DA235C016D00787800 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				3FF32861235AAC820065FF66 /* SearchViewController.swift in Sources */,
 				3F86523F235BA27200FF7D32 /* DetailViewController.swift in Sources */,
 				3FF3284A235AA9A90065FF66 /* ViewController.swift in Sources */,
+				3FAC16DB235C016D00787800 /* Item.swift in Sources */,
 				3FF32846235AA9A90065FF66 /* AppDelegate.swift in Sources */,
 				3FF3286B235AB6FC0065FF66 /* CollectionTableViewCell.swift in Sources */,
 				3FF32869235AB44B0065FF66 /* MapTableViewCell.swift in Sources */,

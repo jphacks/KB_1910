@@ -12,6 +12,11 @@ import Nuke
 class HomeViewController: UIViewController {
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    //    データ
+    let items = [Item(name: "ポートタワー", discription: "JPHACKS最高!!", image_path: "https://images.unsplash.com/photo-1565706199223-96ec87a24026?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"), Item(name: "神戸港", discription: "JPHACKS最高!!", image_path: "https://images.unsplash.com/photo-1559480671-4577ba1ea77b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"), Item(name: "夜景", discription: "JPはジャパン", image_path: "https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"), Item(name: "ポートタワー", discription: "JPはジャパン", image_path: "https://images.unsplash.com/photo-1565706199223-96ec87a24026?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"), Item(name: "神戸港", discription: "JPはジャパン", image_path: "https://images.unsplash.com/photo-1559480671-4577ba1ea77b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"), Item(name: "夜景", discription: "JPはジャパン", image_path: "https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"), Item(name: "ポートタワー", discription: "たのしい", image_path: "https://images.unsplash.com/photo-1565706199223-96ec87a24026?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"), Item(name: "神戸港", discription: "うれしい", image_path: "https://images.unsplash.com/photo-1559480671-4577ba1ea77b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"), Item(name: "夜景", discription: "さいこう", image_path: "https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60")]
+    var selectedItemIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,7 +58,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
      * cellの個数
      */
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return items.count+1
     }
     
     /*
@@ -68,12 +73,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionItem", for: indexPath) as! ItemCollectionViewCell
             
-            let array = ["https://images.unsplash.com/photo-1565706199223-96ec87a24026?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1559480671-4577ba1ea77b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1559480671-12ceff3e511d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60","https://images.unsplash.com/photo-1559480671-6c53c761ee1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60","https://images.unsplash.com/photo-1548712637-033b00ef9b4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60","https://images.unsplash.com/photo-1531055264461-e9e6b72744ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60","https://images.unsplash.com/photo-1503899036084-c55cdd92da26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1554797589-7241bb691973?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"]
-
-            let randomIndex = Int(arc4random_uniform(UInt32(array.count)))
-            
             // 画像を設定
-            Nuke.loadImage(with: URL(string: array[randomIndex])!, into: cell.ImageItem)
+            Nuke.loadImage(with: URL(string: items[indexPath.row].image_path)!, into: cell.ImageItem)
             return cell
         }
     }
@@ -83,6 +84,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
      */
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
+        selectedItemIndex = indexPath.row
         
         if indexPath.row != 0 {
             self.performSegue(withIdentifier: "showDetailSegue", sender: nil)
@@ -109,14 +111,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             let nextView = segue.destination as! DetailViewController
         
             // ④値の設定
-//            nextView.Name = items[selectedItemIndex].name
-//            nextView.imagePath = items[selectedItemIndex].main_image_path
-//            nextView.descrip = items[selectedItemIndex].discription
-            
-            nextView.Name = "defau user"
-            nextView.imagePath = "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-            nextView.descrip = "sadadvawineoiawoev"
-            
+            nextView.Name = items[selectedItemIndex].name
+            nextView.imagePath = items[selectedItemIndex].image_path
+            nextView.descrip = items[selectedItemIndex].discription
         }
     }
     
