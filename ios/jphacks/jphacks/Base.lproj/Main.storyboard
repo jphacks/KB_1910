@@ -170,7 +170,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="G5B-4c-SyB" kind="relationship" relationship="viewControllers" id="Hox-8R-QTU"/>
-                        <segue destination="c42-oh-RxF" kind="relationship" relationship="viewControllers" id="H0X-zq-hfT"/>
                         <segue destination="mC3-o6-m21" kind="relationship" relationship="viewControllers" id="9i5-Ny-MmC"/>
                     </connections>
                 </tabBarController>
@@ -225,6 +224,7 @@
         <!--RECOMEND-->
         <scene sceneID="HFb-1H-Xl8">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATB-yv-OlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="searchScene" id="c42-oh-RxF" customClass="SearchViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hxj-ex-oVt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -244,7 +244,6 @@
                         <outlet property="recommendTable" destination="Yh8-Sh-cqX" id="Gk8-qE-6k1"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ATB-yv-OlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3792.753623188406" y="148.66071428571428"/>
         </scene>
@@ -302,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfm-i4-j0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5028.985507246377" y="588.61607142857144"/>
+            <point key="canvasLocation" x="5061" y="149"/>
         </scene>
         <!--POST-->
         <scene sceneID="stJ-if-f48">
@@ -396,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kg4-7e-khL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5029" y="-165"/>
+            <point key="canvasLocation" x="5110" y="-598"/>
         </scene>
     </scenes>
     <resources>
